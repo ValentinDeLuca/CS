@@ -31,16 +31,17 @@ def top_one_hundred(words_in_file):
             word_count[word] = word_count[word] + 1
         else:
             word_count[word] = 1
-    return sorted(word_count.items(), key=lambda x: x[1], reverse=True)
+    sorted_dict = sorted(word_count.items(), key=lambda x: x[1], reverse=True)
+    for i in range(100):
+        print(f"{sorted_dict[i]}")
+    return 1
 
 def main():
-    choice = int(input("1: Search for Words\n2: Top 100"))
+    choice = int(input("1: Search for Words\n2: Top 100\n->>"))
     if choice == 1:
         print(analyze(file_open(FILE_NAME), input_words()))
     elif choice == 2:
-        sorted_dict = top_one_hundred(file_open(FILE_NAME))
-        for i in range(100):
-            print(f"{sorted_dict[i]}")
+        top_one_hundred(file_open(FILE_NAME))
 
 
 if __name__ == "__main__":
