@@ -1,3 +1,8 @@
+"""Write a program that counts the occurrences of each word in a text file,whose
+name is entered by keyboard. Assume that the file contains only alphabetical or
+spacing characters. B) Next, improve the program so that it displays the 100 most
+common words (in case of parity at position 100, it does not matter which words are
+printed)."""
 FILE_NAME = "text.txt"
 
 def file_open(name_of_file):
