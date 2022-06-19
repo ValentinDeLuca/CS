@@ -13,7 +13,7 @@ def main():
 
 def prime(numbers, i, n):
     if i <= n:
-        numbers = numbers.difference(set(range(i * 2, n + 1, i)))
+        numbers.difference_update(set(range(i * 2, n + 1, i)))
         return prime(numbers, i + 1, n)
     return sorted(numbers)
 
