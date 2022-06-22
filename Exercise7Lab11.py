@@ -15,7 +15,7 @@ WALL = "*"
 
 def open_file(filename):
     try:
-        with open(filename) as file:
+        with open(filename, "r") as file:
             return file.read().splitlines()
     except OSError as problem:
         print(f"OSError opening file: {problem}")
