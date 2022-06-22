@@ -1,0 +1,4 @@
+ZaptorZap;dinner;$900.00;20/10/2022
+Matthew;conference;$750.00;19/10/2022
+Bagelis;accommodation;$1200.99;10/9/2022
+Zudo;accommodation;$800;10/9/2022
